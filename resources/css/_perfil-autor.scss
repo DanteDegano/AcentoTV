@@ -1,0 +1,84 @@
+.perfil{
+    background-color: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(30px);
+    width: 100%;
+    max-width: 1290px;
+    padding: 20px;
+    margin-bottom: 32px;
+    &-iab{
+        width: 100%;
+        max-width: 970px;
+        margin: 0 auto;
+        height: 90px;
+        background-color:#D9D9D9;
+        margin-bottom: 24px;
+    }
+    &-autor{
+        &-img{
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background-color: #DCDCDC;
+            flex-shrink: 0;
+            margin: 0 auto 20px;
+        }
+        &-redes{
+            justify-content: space-between;
+            max-width: 250px;
+            margin-bottom: 10px;
+            &-red{
+                display: flex;
+                align-items: center;
+                color: white;
+                &-logo{
+                    background-color:$morado-acentotv;
+                    padding: 7px;
+                    border-radius: 20px;
+                    margin-right: 10px;
+                    &:hover{
+                        background-color: #FF908F;
+                    }
+                }
+            }
+        }
+        &-info{
+            &-nombre{
+                font-size: 32px;
+                font-weight: 800;
+                margin-bottom: 10px;
+                color: white;
+            }
+            &-cargo{
+                font-size: 16px;
+                margin-bottom: 12px;
+                color: white;
+            }
+            &-descripcion{
+                font-size: 16px;
+                margin-bottom: 30px;
+                color: white;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+
+    .perfil{
+        margin: 0 auto 50px;
+        padding: 30px 155px 65px; 
+        &-iab{
+            margin-bottom: 46px;
+        }
+        &-autor{
+            display: flex;
+            &-img{
+                margin-right: 50px;
+            }
+            &-redes{
+                display: flex;
+            }
+        }
+    }
+}

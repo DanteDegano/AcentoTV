@@ -1,0 +1,158 @@
+
+.titulo-programa{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 20px 0;
+    &-subrayado{
+        width: 73px;
+        height: 6px;
+        background: #ff2961;
+        background: -webkit-gradient(linear, left top, right top, from(#ff2961), to(#ffe55d));
+        background: linear-gradient(to right, #ff2961 0%, #ffe55d 100%);
+        border-radius: 30px;
+        margin-top: 4px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+
+}
+
+.progrmas-titulo{
+    color: white;
+}
+
+.programa-imagen{
+border-bottom-right-radius: 10px;
+}
+
+.programas{
+    position: relative;
+    max-width: 1350px;
+    margin: 0 auto 32px;
+    overflow: hidden;
+    &-wrapper{
+        background-color: $morado-acentotv;
+    }
+    &-programa{
+        width: 300px;
+        height: 370px;
+        -webkit-backdrop-filter: blur(30px);
+        backdrop-filter: blur(30px);
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.15);
+        margin-bottom: 32px;
+        border-bottom-right-radius: 10px;
+    }
+    &-degrade{
+        position: absolute;
+        background: linear-gradient(to bottom,rgba(0,0,0,0) 75%,#FF2961 100%);
+        bottom: 0;
+        z-index: 2;
+        width: 300px;
+        height: 370px;
+        left: 0;
+        border-bottom-right-radius: 10px;
+    }
+    &-noticia{
+        font-size: 32px;
+        font-weight: bold;
+        font-style: italic;
+        color: white;
+        padding: 0 20px 20px;
+        position: absolute;
+        bottom: 0;
+        z-index: 3;
+        left: 0;
+        right: 0;
+        text-align: start;
+    }
+    &-imagen{
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+    }
+    &-vertodomobile{
+      width: 295px;
+      height: 37px;
+      border-radius: 30px;
+      border: 1px solid #FF908F;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 14px;
+      margin: 0 auto;  
+      text-decoration: none;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+      display: flex;
+      &:hover{
+        background: #ff2961;
+        background: -webkit-gradient(linear, left top, right top, from(#ff2961), to(#ffe55d));
+        background: linear-gradient(to right, #ff2961 0%, #ffe55d 100%);
+        }
+    }
+    &-vertododesk{
+        width: 295px;
+        height: 37px;
+        border-radius: 30px;
+        border: 1px solid #FF908F;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover{
+          background: #ff2961;
+          background: -webkit-gradient(linear, left top, right top, from(#ff2961), to(#ffe55d));
+          background: linear-gradient(to right, #ff2961 0%, #ffe55d 100%);
+          }
+    }
+    &-degrade{
+        &:hover{
+             .programas-noticia {
+                color: #ffe55d;
+             }
+         } 
+    }
+}
+
+@media only screen and (min-width: 1024px){
+
+    .titulo-programa{
+        margin-bottom: 20px;
+        font-size: 28px;
+        padding: 0 50px 0 40px;
+        margin-left: 5px;
+        &-subrayado{
+            margin-bottom: 0;
+            width: 100px;
+            margin-top: 0;
+        }
+    }
+
+    .programas{
+        padding: 35px;
+        max-width: 1450px;
+        &-vertododesk{
+            display: flex;
+            font-weight: 400;
+        }
+        &-vertodomobile{
+            display: none;
+        }
+    }
+
+
+}

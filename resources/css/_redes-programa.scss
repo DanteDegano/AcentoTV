@@ -1,0 +1,48 @@
+.nota-redes{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 30px auto 0;
+    justify-content: flex-end;
+    padding: 0 20px;
+    flex-shrink: 0;
+    display: none;
+
+    &-compartir{
+        color: #968FBD;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    &-red{
+        margin: 0 10px;
+        background-color: #403770;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            background-color: #FF908F;
+        }
+
+    }
+}
+
+.page-programacion .nota-redes{ 
+    padding: 0;
+}
+
+.page-ficha .nota-redes{
+    margin: 0;
+    padding-right: 0;
+}
+
+@media only screen and (min-width: 1024px){
+    .nota-redes{
+        display: flex;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}

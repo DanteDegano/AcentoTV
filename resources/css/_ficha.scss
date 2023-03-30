@@ -1,0 +1,185 @@
+.ficha{
+    padding: 20px 0;
+    width: 100%;
+    max-width: 960px;
+    background-color:$morado-acentotv;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-bottom: 32px;
+    position: relative;
+    &-wrapper-img{
+        position: relative;
+        margin-bottom: 20px;
+    }
+    &-decoracion{
+        &-a{
+            position: absolute;
+            right: 0px;
+            bottom: 100px;
+        }
+        &-arco{
+            position: absolute;
+            left: -20px;
+            top: 20px;  
+        }
+    }
+    &-degrade{
+        &-mobile{
+            position: absolute;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(0, 0, 0, 0)), to(#FF2961));
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, #FF2961 100%);
+            bottom: 0;
+            z-index: 2;
+            width: 100%;
+            height: 450px;
+            left: 0;
+        }
+        &-desk{
+            position: absolute;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, rgba(0, 0, 0, 0)), to(#FF2961));
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 25%, #FF2961 100%);
+            bottom: 0;
+            z-index: 2;
+            width: 100%;
+            height: 450px;
+            left: 0;
+            display: none;
+        }
+    }
+    &-img{
+        position: relative;
+        z-index: 2;
+        max-height: 450px;
+        max-width: 430px;
+        margin: 0 auto;
+    }
+    &-contenido{
+        &-titulo{
+            &-mobile{
+                color: white;
+                font-size: 20px;
+                font-weight: 800;
+                text-align: center;
+            }
+            &-desk{
+                color: white;
+                font-size: 20px;
+                font-weight: 800;
+                text-align: center;
+                display: none;
+            }
+        }
+        &-conduccion{
+            color: #83FAC1;
+            font-size: 14px;
+            line-height: 17px;
+            font-weight: 500;
+            padding: 0 30px;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        &-info{
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 0 30px;
+        }
+        &-texto{
+            font-size: 16px;
+            color: white;
+            line-height: 22px;
+            margin-bottom: 30px;
+        }
+    }
+    &-horarios{
+        margin-bottom: 20px;
+        &-contenedor{
+            display: flex;
+            &-logo{
+                flex-shrink: 0; 
+                display: flex;
+                margin-right: 5px;
+            }
+            p{
+                color: white;
+                font-size: 13px;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+            }
+            &-dias{
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+
+    .ficha{
+        padding: 40px 0 60px;
+        &-wrapper-img{
+            display: flex;
+            align-items: flex-end;
+            margin: 0;
+        }
+        &-degrade{
+            &-mobile{
+                display: none;
+            }
+            &-desk{
+                display: flex;
+                margin-bottom: 60px;
+            }
+        }
+        &-img{
+            max-width: 430px;
+            width: 100%;
+        }
+        &-decoracion{
+            &-a{
+                top: 20px;
+                right: 20px;
+            }
+            &-arco{
+                left: 0;
+                top: -40px;
+                left: initial;
+                transform: rotate(-180deg);
+            }
+        }
+        &-contenido{
+            display: flex;
+            flex-direction: row-reverse;
+            &-izq{
+                width: 50%;
+            }
+            &-titulo{
+                &-mobile{
+                    display: none;
+                }
+                &-desk{
+                    display: flex;
+                    padding-left: 30px;
+                    margin-bottom: 12px;
+                    font-size: 32px;
+                }
+            }
+            &-conduccion{
+                font-size: 16px;
+                font-weight: bold;
+                padding: 0 0 0 30px;
+                margin-bottom: 35px;
+                position: relative;
+                z-index: 2;
+            }
+            &-info{
+                flex-direction: column;
+                position: relative;
+                z-index: 2;
+            }
+            &-texto{
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+}

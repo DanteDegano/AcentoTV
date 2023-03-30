@@ -1,0 +1,212 @@
+
+.titulo-en-vivo{
+    display: flex;
+    margin-bottom: 20px;
+
+    p:first-child{
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    p:nth-child(2){
+        color: #3E3A43;
+        margin: 0 5px;
+    }
+    p:nth-child(3){
+        color: #FFE55D;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+.wrapper-noticia-en-vivo{
+    position: relative;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.noticia-en-vivo{
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    max-width: 958px;
+    margin-bottom: 20px;
+
+    &-picture{
+        max-width: 930px;
+        margin-left: 0px;
+        
+    }
+    &-imagen{
+        width: 100%;
+        margin-left: 0px;
+    }
+    &-play{
+        position: absolute;
+        top: 16px;
+        left: 16px;
+    }
+    &-buttom{
+        position: relative;
+        padding: 10px 0px 20px;
+        background-color: $morado-acentotv;
+        &-wrapper-titulo{
+            align-items: center;
+        }
+    }
+
+    &-icon{
+        background-color: $rosa-acentotv;
+        width: 75px;
+        height: 20px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+
+        &-punto{
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background-color: #FFCD21;
+            margin: 0 5px 0 0;
+        }
+        &-text{
+            font-size: 12px;
+            color: white;
+            font-weight: 800;
+            font-style: italic;
+            text-transform: uppercase;
+
+        }
+
+    }
+    &-imagen-decorativa{
+        width: auto;
+        height: 73px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    &-titulo{
+        font-size: 18px;
+        font-weight: 800;
+        color: white;
+        padding-right: 95px;
+        margin-bottom: 10px;
+    }   
+
+    &-nota{
+        font-size: 14px;
+        color: white;
+        margin-bottom: 20px;
+        padding-right: 10px;
+        position: relative;
+    }
+    &-fecha{
+        font-size: 13px;
+        color: white;
+        font-style: italic;
+    }    
+
+}
+
+.decoracion-noticia-en-vivo{
+    top: 47px;
+    left: -10px;
+    background-color: $morado-acentotv;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    right: 0;
+    border-top-left-radius: 10px;
+    
+}
+
+
+@media only screen and (min-width: 1024px){
+
+    .wrapper-noticia-en-vivo{
+        position: relative;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .titulo-en-vivo{
+        p:first-child{
+            font-size: 32px;
+        }
+        p:nth-child(2){
+            font-size: 32px;
+        }
+        p:nth-child(3){
+            font-size: 32px;
+        }
+    }
+         
+    .noticia-en-vivo{
+        margin-bottom: 0;
+        &-titulo{
+            font-size: 28px;
+            margin-left: 10px;
+            margin-bottom: 0;
+        }
+        &-imagen-decorativa{
+            width: auto;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        &-nota {
+            font-size: 16px;
+            color: white;
+            font-weight: 500;
+            line-height: 22px;
+            margin-bottom: 20px;
+            margin-left: 5px;
+            margin-right: 220px;
+        }
+
+        &-buttom{
+            padding: 10px 30px 20px;
+            &-wrapper-titulo{
+                display: flex;
+                margin: 10px 0 10px;
+            }
+        }
+        &-picture{
+            margin-left: 30px;
+            svg{
+                width: 86px;
+                height: 86px;
+            }
+        }
+        &-fecha{
+            font-size: 16px;
+            color: white;
+            font-style: italic;
+            margin-left: 5px;
+        }
+        &-icon{
+            width: 100px;
+            height: 27px;
+            margin-bottom: 0;
+            &-text{
+                font-size: 14px;
+            }
+        }
+    }
+
+    .decoracion-noticia-en-vivo {
+        top: 47px;
+        left: 0px;
+    }
+
+
+}

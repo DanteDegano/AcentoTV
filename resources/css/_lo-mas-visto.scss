@@ -1,0 +1,93 @@
+.videos-destacados{
+    padding: 0 20px;
+
+    &-titulo{
+     font-size: 18px;
+     font-weight: bold;   
+     color: #fff;
+     text-transform: uppercase;
+     margin-bottom: 5px;
+    }
+    &-subrayado{
+        width: 76px;
+        height: 6px;
+        border-radius: 30px;
+        background: rgb(255,41,97);
+        background: -moz-linear-gradient(left, rgba(255,41,97,1) 0%, rgba(255,229,93,1) 100%);
+        background: -webkit-linear-gradient(left, rgba(255,41,97,1) 0%,rgba(255,229,93,1) 100%);
+        background: linear-gradient(to right, rgba(255,41,97,1) 0%,rgba(255,229,93,1) 100%);
+        margin-bottom: 20px;
+
+    }
+}
+
+.lo-mas-visto{
+
+    &-casilla{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #222026;
+        position: relative;
+        padding: 0 20px 20px ;
+        &:hover{
+            .lo-mas-visto-casilla-right-noticia{
+                color: #FFE55D;
+            } 
+        }
+        
+        &-separador{
+            width: 90%;
+            margin: 0 auto;
+            height: 2px;
+            background-color: #27252B;
+            margin-bottom: 20px;
+        }
+        &-left{
+            position: relative;
+            &-img{
+                width: 100px;
+                height: 58px;
+            }
+            &-ranking{
+                position: absolute;
+                font-size: 44px;
+                color: #FFE55D;
+                bottom: -20px;
+                right: 10px;
+                font-weight: bold;
+            }
+        }
+        &-right{
+            &-noticia{
+                padding-left: 20px;
+                color: white;
+                font-size: 14px;
+                font-weight: 500;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1024px){
+
+    .videos-destacados{
+        padding: 0;
+        &-titulo{
+           padding: 0;  
+           font-size: 28px;
+        }
+        &-subrayado{
+            margin-left: 0;
+            width: 100px;
+        }  
+    }
+
+    .lo-mas-visto-casilla{
+        padding: 10px;
+    }
+
+}

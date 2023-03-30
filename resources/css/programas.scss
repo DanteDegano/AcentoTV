@@ -1,0 +1,39 @@
+/* Fonts */
+@import "_colores";
+@import "_generales";
+@import "_header";
+@import "_menu";
+@import "_noticia-rosada";
+@import "_noticia-violeta";
+@import "_noticia-gris";
+@import "_podcast-y-ultimas-noticias";
+@import "_ultimas-noticias";
+@import "_swiper-estilos-programas";
+@import "_un-programa";
+@import "_banners-home";
+@import "_redes-programa";
+@import "_decoraciones-programa";
+@import "_footer";
+
+.wrapper{
+    margin-top: 75px;
+}
+
+
+/*  Inicio Desk */
+
+@media only screen and (min-width: 1024px){
+
+    .page-programas .podcast-wrapper{
+        margin: 36px 0 80px;
+    }
+
+    .page-programas .ultimas-noticias{
+        margin-top: 80px;
+    }
+
+    .wrapper{
+        margin-top: 130px;
+    }
+
+}

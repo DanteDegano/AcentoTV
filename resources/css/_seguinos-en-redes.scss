@@ -1,0 +1,40 @@
+.redes{
+    width: 295px;
+    height: 228px;
+    border: 1px solid #FF2961;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 2px #FF908F;
+    margin-bottom: 32px;
+    flex-direction: column;
+    &-texto{
+        font-size: 32px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 3px 3px $morado-acentotv;
+        margin-bottom: 20px;
+        padding-left: 20px;
+    }
+    &-redes{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+
+        &-circulo{
+            background-color: $morado-acentotv;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            padding: 10px;            &:hover{
+                background-color: #FF908F;
+            }
+        }
+    }
+
+}

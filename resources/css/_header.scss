@@ -1,0 +1,205 @@
+@-webkit-keyframes heartbeat_scale {
+    0% {
+      -webkit-transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.75);
+    }
+    100% {
+      -webkit-transform: scale(1);
+    }
+  }
+@keyframes heartbeat_scale {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.75);
+              transform: scale(0.75);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+}
+
+.header{
+    align-items: center;
+    backdrop-filter: blur(30px);
+    height: 50px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.06);
+    &-contenido{
+        max-width: 1350px;
+        margin: 0 auto ;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: space-between;
+        height: 50px;
+    }
+    &-left{
+        display: flex;
+        align-items: center;
+    }
+    &-right{
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    &-logo{
+        background-color: $rosa-acentotv;
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-envivo{
+        display: flex;
+        &:hover{
+            text-decoration: underline;
+            color: white;
+        }
+
+        &-logo{
+            margin-right: 10px;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            background-color: #FFCD21;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-animation: heartbeat_scale 1.7s infinite;
+            animation: heartbeat_scale 1.7s infinite;
+        }
+        &-texto{
+            font-size: 13px;
+            font-style: italic;
+            font-weight: 800;
+            text-transform: uppercase; 
+            color: white;
+            }
+        
+    }
+
+    &-redes{
+        display: none;
+        align-items: center;
+        padding-right: 32px;
+
+        &-logo{
+            margin-right: 20px;
+        }
+    }
+}
+
+.hamburguesa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    &-span{
+        width: 24px;
+        height: 4px;
+        background-color: #fff;
+    }
+}
+
+
+.header-sticky .header-logo{
+margin-right: 0px;
+}
+.header-sticky .header-redes-logo{
+    margin: 0 10px;
+    }
+
+.header-sticky{
+    position: fixed;
+    transform: translateY(-100%);
+    .header-redes{
+        display: flex;
+        padding-right: 0;
+    }
+}
+
+.header-sticky.change{
+    transform: translateY(0%);
+
+}
+
+.page-home{
+    .header{
+        &-redes{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+
+    .page-home{
+        .header{
+            &-redes{
+                display: flex;
+            }
+        }
+    }
+
+    .header{
+        &-redes{
+            display: flex;
+        }
+    }
+
+    .page-nota{
+        .header{
+            &-redes{
+                display: flex;
+            }
+        }
+    }
+
+    .header{
+        height: 90px;
+        padding: 0 30px;
+        position: fixed;
+        &-contenido{
+            height: 90px;
+            padding: 0 30px;
+        }
+        &-redes{
+            right: 123px;
+            margin-right: 70px;
+        }
+        &-logo{
+            width: 90px;
+            height: 90px;
+            margin-right: 94px;
+            svg{
+                width: 60px;
+                height: 60px;
+            }
+        }
+        &-envivo-texto{
+            display: flex;
+            font-size: 24px;
+        }
+        &-envivo-logo{
+            width: 26px;
+            height: 26px;
+        }
+    }
+
+}

@@ -1,0 +1,130 @@
+.none{
+    display: none !important;
+}
+
+.banner1{
+   margin: 0 auto 32px;
+   display: flex;
+   justify-content: center;
+}
+
+.wrapper-banner3{
+    padding: 0 20px;
+}
+
+.banner9{
+    margin: 0 auto 32px;
+}
+
+.banner10{
+    margin: 22px auto 32px;
+}
+
+.banner11{
+    margin: 0 auto 32px;
+}
+
+.wrapper-banner12{
+    padding: 0 20px;
+}
+
+.banner12{
+    width: 100%;
+    margin: 0 auto 32px;
+    height: 50px;
+    background-color: #393740;
+    display: none;
+    max-width: 970px;
+}
+
+.banner13{
+    width: 300px;
+    margin: 0 auto 32px;
+    height: 250px;
+    background-color: #393740;
+    display: none;
+}
+
+.banner14{
+    margin: 0 auto 32px;
+}
+
+
+.banner-sticky{
+    width: 100%;
+    position: fixed;
+    background: rgba(255,255,255,0.5);
+    bottom: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+
+    .banner-sticky-script{
+        > div:not([data-google-query-id]) +  .banner-sticky-btn{
+            display: none;
+        }
+     } 
+
+    &-btn{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        cursor: pointer;
+        padding-left: 4px;
+        border: 2px solid #000;
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        span{
+            width: 70%;
+            height: 2px;
+            display: block;
+            border-radius: 33px;
+            display: block;
+            position: absolute;
+            background: #000;
+            transform: rotate(-45deg);
+            top: 12px;
+            left: -8px;
+            &:last-child{
+                transform: rotate(45deg);
+            }
+        }
+    }
+    &-script{
+        position: relative;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+
+.banner1{
+    margin: 0 auto 80px;
+}
+
+.banner9{
+    margin-top: 65px;
+}
+
+.banner10{
+    margin: 32px auto;
+}
+
+.banner12{
+    display: none;
+}
+
+.banner13{
+    display: none;
+}
+
+.banner14{
+    max-width: 728px;
+    margin: 80px auto;
+    height: 90px;
+    width: 100%;
+}
+
+}

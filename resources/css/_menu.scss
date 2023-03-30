@@ -1,0 +1,114 @@
+.menu.opened{
+    display: flex;
+    transform: translateX(0%);
+}
+
+.menu{    
+    width: 100%;
+    background-color: #322B57;
+    padding: 80px 20px;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    z-index: 100;
+    justify-content: center;
+    overflow-y: auto;
+    height: 100vh;
+    max-width: 360px;
+    bottom: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 233ms cubic-bezier(0, 0, 0.21, 1);
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    &-wrapper-texto{
+        margin-bottom: 40px;
+    }
+    &-close{
+        display: flex;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    &-opciones{
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        margin: 0;
+
+        &-primera-opcion{
+          display: flex;  
+          justify-content: center;
+          &-svg{
+              margin-right: 10px;
+          }
+        }
+        &-texto{
+            font-size: 18px;
+            font-weight: 600;
+            color: white;
+            margin-bottom: 40px;
+            text-align: center;
+            &:hover{
+                color:#FFE55D;
+            }
+        }
+    }
+    &-tyc{
+        margin-bottom: 50px;
+    }
+    &-info{
+        margin-bottom: 50px;
+        &-titulo{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            justify-content: center;
+            p{
+                font-size: 14px;
+                font-weight: bold;
+                color: white;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+.menu .footer-canales{
+    order: initial;
+    margin-bottom: 70px;
+}
+
+.menu .menu-info{
+    padding-bottom: 40px;
+}
+
+.wrapper-buscador{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.buscador{
+    display: flex;
+    border: 1px solid #FF908F;
+    width: 300px;
+    height: 44px;
+    box-shadow: 2px 2px 2px $rosa-acentotv;
+    background-color: #403770;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    &-buscar{
+        color: white;
+
+        &::placeholder{
+            color: white;
+            background-color: $moradonoticipodcast;
+        }
+    }
+}

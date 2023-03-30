@@ -1,0 +1,72 @@
+.noticia-multimedia2{
+    position: relative;
+    background-color: $moradonoticipodcast;
+    margin: 0 auto 32px;
+    max-width: 320px;
+    border-bottom-right-radius: 10px;
+    height: 100%;
+    &-play{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    &-img{
+        margin-bottom: 10px;
+        width: 100%;
+
+    }
+    &-cartel-tendencia{
+        display: flex;
+        margin-bottom: 15px;
+        padding-left: 20px;
+        p{
+            background-color: $verde-agua;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 1;
+            padding: 4px 10px;
+            text-transform: uppercase;
+            border-radius: 30px;
+        }
+    }
+    &-noticia{
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 20px;
+        padding: 0 20px;
+    }
+    &:hover{
+        .noticia-multimedia2-noticia{
+            color: #FFE55D;
+        }
+    }
+    &-autoria{
+        font-size: 12px;
+        font-weight: 400;
+        color: #fff;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+}
+
+.podcast-wrapper .noticia-multimedia2{
+    max-width: 280px;
+}
+
+.swiper-container .noticia-multimedia2{
+    margin: 0;
+}
+
+@media only screen and (min-width: 1024px){
+
+.section4-left-middle .noticia-multimedia2:nth-child(2){
+    margin: 0 30px;
+}
+
+.noticia-multimedia2{
+    max-width: 300px;
+    margin: 0;
+}
+
+}
